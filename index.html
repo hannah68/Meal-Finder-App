@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meal app</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="#home">
+            <h1>Meal Finder</h1>
+            <h2 class="container-title">Delicious,healthy meals made easy</h2>
+            <img class="container-img" src="img/plate.jpg" alt="">
+            <div class="step3">
+                <div class="st1">
+                    <p>Pick meals for the week</p>
+                </div>
+                <div class="st2">
+                    <img src="img/2_Grocery Shopping.jpg" alt="">
+                    <span>Grocery shop in one quick trip</span>
+                </div>
+                <div class="st3">
+                    <span>Cook in 30 minutes</span>
+                    <img src="img/vector-mixing-bowl-and-the-cooking-workspace.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- First-page -->
+        <div class="first-page" id="firstPage">
+            <div class="row">
+                <div class="btn-group">
+                    <button class="idea-btn waves-effect waves-light btn-large"><i class="fas fa-lightbulb"></i></button>
+                    <p>Meal Idea</p>
+                </div>
+
+                <div class="btn-group">
+                    <button class="shopping-btn waves-effect waves-light btn-large"><i class="fas fa-shopping-cart"></i></button>
+                    <p>Shopping List</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- second page/ meal idea -->
+        <div class="second-page">
+            <button class="home-btn waves-effect btn-small">HOME</button>
+            <h1>Meal Idea</h1>
+            <!-- first row btn -->
+            <div class="btn1">
+                <div class="meal-group">
+                    <button class="breakfast-btn waves-effect waves-light btn-large">breakfast</button>
+                </div>
+
+                <div class="meal-group">
+                    <button class="main-btn waves-effect waves-light btn-large">main course</button>
+                </div>
+            </div>
+            <!-- second row btn -->
+            <div class="btn2">
+                <div class="meal-group">
+                    <button class="soup-btn waves-effect waves-light btn-large">soup</button>
+                </div>
+                
+                <div class="meal-group">
+                    <button class="dessert-btn waves-effect waves-light btn-large">dessert</button>
+                </div>
+            </div>
+
+            <!-- meal of day -->
+            <div class="meal-of-day">
+                <h3>Idea of the day</h3>
+                <div class="img-container"></div>
+            </div>
+
+            <!-- meal of day instruction -->
+            <div class="details-instruction"></div>
+            <!-- meal of day ingredient -->
+            <div class="details-ingredient"></div>
+            <!-- meal of day ingredient -->
+            <div class="details-nutrition"></div>
+
+            <!-- meal idea container-->
+            <div class="mealIdea-container">
+                <h3 class="title"></h3>
+                <input type="text" class="mealIdea-search">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="random-meal"></div>
+                <div class="search-results"></div>
+
+                <!-- meals instruction -->
+                <div class="details-inst"></div>
+                <!-- meals ingredient -->
+                <div class="details-ingr"></div>
+                <!-- meals ingredient -->
+                <div class="details-nutr"></div>
+            </div>
+        </div>
+
+        <!-- third page/shopping list -->
+        <div class="third-page">
+            <div class="groceries">
+                <button class="back-btn-shopping waves-effect waves-light btn-large">BACK</button>
+                <h1>Shopping List</h1>
+                <br>
+                <p>
+                    <i id="pencil" class="fas fa-pencil-alt"></i>
+                    <input type="text" id="userinput" maxlength="25">
+                </p>
+                <br>
+
+                <div class="all-items"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+    </script>
+</body>
+</html>

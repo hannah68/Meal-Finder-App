@@ -1,0 +1,509 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#92dad2;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2);
+    border:0;
+    margin: 0;
+}
+
+/* header styling================== */
+.header h1{
+    text-transform: uppercase;
+    color: #0fa596;
+}
+
+.header.hide{
+    display: none;
+}
+
+.header.show{
+    display: block;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+button{
+    text-align: center;
+}
+
+.container-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-img{
+    height: 100px;
+    width: 100px;
+}
+
+.step3{
+    width: 600px;
+    margin: 0 auto;
+    /* box-shadow:10px 10px 24px 0px rgba(0,0,0,0.50) ; */
+    box-shadow:rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset;
+    border:1px solid rgb(204, 204, 204);
+}
+
+.st1{
+    margin-bottom: 3rem;
+}
+
+.st1 p{
+    font-weight: bold;
+}
+
+.st2,
+.st3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.st2 img{
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.st3 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.st2 span
+.st3 span{
+    display: inline-block;
+}
+
+/* First page styling======================== */
+.first-page{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+    border:1px solid transparent;
+    border:0;
+    margin: 4rem auto;
+    padding: 2rem 0;
+}
+
+.first-page.hide{
+    display: none;
+}
+
+.first-page.show{
+    display: block;
+}
+
+.row{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    cursor: pointer;
+}
+
+.btn-group button{
+    width: 7rem;
+}
+
+/* second page styling====================== */
+.second-page{
+    display: none;
+}
+
+.second-page.show{
+    display: block;
+}
+
+.second-page.hide{
+    display: none;
+}
+
+.second-page h1{
+    color: #26a69a;
+}
+
+.home-btn{
+    background-color: tomato !important;
+    margin-right: 40rem;
+    margin-top: 1rem;
+}
+
+.btn1,
+.btn2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn1{
+    margin-bottom: 1rem;
+}
+
+.meal-group button{
+    width: 9rem;
+    text-align: center;
+}
+
+/* second page/ meal of day=============== */
+.meal-of-day.hide{
+    display: none;
+}
+
+.meal-of-day h3{
+    color: tomato;
+    font-weight: bold;
+}
+
+.img-container img{
+    border: 5px solid #26a69a;
+    cursor: pointer;
+}
+
+
+.details-instruction.hide{
+    display: none;
+}
+
+.details-instruction h3{
+    background-color: tomato;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+.details-instruction .all-steps{
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow:0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12);
+    border:0;
+}
+
+.details-ingredient.hide{
+    display: none;
+}
+
+.details-ingredient h3{
+    background-color: tomato;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+.details-ingredient ul{
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow:0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12);
+    border:0;
+}
+
+.details-ingredient ul li{
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-color: #26a69a;
+    color: #2d2013;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+}
+
+.details-nutrition.hide{
+    display: none;
+}
+.details-nutrition h3{
+    background-color: tomato;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 1rem 3rem 1rem;
+    width: 96.3%;
+}
+  
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.add-item i{
+    color: #000;
+}
+
+
+/* meal idea container======================= */
+
+.mealIdea-container{
+    display: none;
+    margin-bottom: 3rem;
+}
+
+.mealIdea-container.show{
+    display: block;
+}
+
+.mealIdea-container .title{
+    color: tomato;
+    text-transform: capitalize;
+}
+
+.mealIdea-search{
+    height: 17px !important;
+    width: 50% !important;
+    padding: 8px 10px!important;
+    box-shadow:0 0 11px rgba(33,33,33,.2) !important;
+    border:1px solid tomato !important;
+    border-radius: 5px !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    font-size: 14px;
+    margin-bottom: 2rem !important;
+    border-right: none !important;
+
+}
+
+.mealIdea-search:focus{
+    outline: none;
+}
+
+
+.search-btn{
+    font-size: 19px;
+    width: 3rem;
+    height: 2.23rem;
+    display: inline-block;
+    margin-left: -9px;
+    background-color: rgb(255, 162, 146);
+    border:1px solid tomato;
+    box-shadow:0 0 11px rgba(33,33,33,.2);
+
+    cursor: pointer;
+    border-left: 0;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.search-btn i{
+    color: tomato;
+}
+
+.random-meal h3{
+    color: #26a69a;
+}
+
+.search-results{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+
+.meal-info h3{
+    color:#26a69a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rand-img{
+    height: auto;
+    width: 400px;
+    border:5px solid #26a69a;
+}
+
+.meal img{
+    height: 120px;
+    width: 120px;
+    border:5px solid #26a69a;
+    cursor: pointer;
+}
+
+/* meal idea(inst, ingr, nutr)////================================= */
+
+.details-inst.hide{
+    display: none;
+}
+
+.details-inst h3{
+    background-color: tomato;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+.details-inst .all-steps{
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow:0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12);
+    border:0;
+}
+
+.details-ingr.hide{
+    display: none;
+}
+
+.details-ingr h3{
+    background-color: tomato;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+.details-ingr ul{
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow:0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12);
+    border:0;
+}
+
+.details-ingr ul li{
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-color: #26a69a;
+    color: #2d2013;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+}
+
+.details-nutr.hide{
+    display: none;
+}
+.details-nutr h3{
+    background-color: tomato;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+
+/* shopping list ====================================*/
+.third-page{
+    display: none;
+}
+
+.third-page.hide{
+    display: none;
+}
+
+.third-page.show{
+    display: block;
+    background-image: url(img/fruit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.groceries{
+    width: 600px;
+    max-height: 100vh;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+}
+
+.groceries h1{
+    font-size: 2.5rem;
+    padding-top: 1em;
+    color:tomato;
+    padding: 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+    
+}
+
+.groceries i{
+    font-size: 1.5rem;
+    color: #26a69a;
+}
+
+.groceries input{
+    width: 70% !important;
+    border-bottom: 3px solid tomato !important;
+    height: 1rem !important;
+}
+
+.all-items{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+.all-items div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:rgb(255, 176, 162);
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 3px;
+    box-shadow:0px 1px 2px 1px rgba(0,0,0,0.12);
+    border:0;
+    cursor: pointer;
+}
+
+.back-btn-shopping{
+    margin-right: 40rem;
+}
+
+.btn-delete{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-delete:focus{
+    outline: 0;
+}
+
+.shopping-list span{
+    color: #000;
+}
