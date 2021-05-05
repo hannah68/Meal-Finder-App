@@ -6,15 +6,8 @@ Most recipes come with instructions, required ingredients and nutritional facts 
 <table><tr><td>
   <img src="img/app1.gif" alt="screenshot" width="250px">
   <img src="img/app2.gif" alt="screenshot" width="250px">
-  <img src="img/app3.gif" alt="screenshot" width="250px">
 </td></tr></table>
 
-
-
-<table><tr><td>
-  <img src="img/allmeal.jpg" alt="screenshot" height="350">
-  <img src="img/all-info.jpg" alt="screenshot" height="350">
-</td></tr></table>
 
 <h2>App explanation</h2>
 <p>There is a meal idea button that gives you a random meal; if the picture intrigues you, you can click and see all information related to the dish.
