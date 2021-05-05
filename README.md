@@ -4,9 +4,9 @@ Most recipes come with instructions, required ingredients and nutritional facts 
 <p>Meal finder also contains a shopping list to which you can quickly add items for easy shopping the next time you're out.</p>
 <br>
 <table><tr><td>
-  <img src="img/Screenshot_2.jpg" alt="screenshot" width="250px">
-  <img src="img/shopping.jpg" alt="screenshot" width="250px">
-  <img src="img/meal.jpg" alt="screenshot" width="250px">
+  <img src="img/app1.gif" alt="screenshot" width="250px">
+  <img src="img/app2.gif" alt="screenshot" width="250px">
+  <img src="img/app3.gif" alt="screenshot" width="250px">
 </td></tr></table>
 
 
